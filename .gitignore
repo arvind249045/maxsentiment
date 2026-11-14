@@ -1,0 +1,19 @@
+# never commit scraped data or sessions
+maxsentiment_runs/
+*.jsonl
+*.sqlite
+.private/
+.env
+openai_key.txt
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+# os / editor
+.DS_Store
+.idea/
+.vscode/

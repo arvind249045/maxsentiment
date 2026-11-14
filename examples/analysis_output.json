@@ -1,0 +1,97 @@
+{
+  "generated_by": "maxsentiment",
+  "subject": "Deepinder Goyal (Zomato founder) — posts about Temple, his health wearable",
+  "raw_data": {
+    "x": "raw_comments_x.json",
+    "instagram": "raw_comments_instagram.json"
+  },
+  "headline_finding": {
+    "theme": "Demand for validated, peer-reviewed science",
+    "insight": "On every platform the loudest substantive objection is the same: show the validated science. Medical professionals lead it.",
+    "by_platform": {
+      "x": {
+        "comments_analyzed": 5241,
+        "comments_demanding_proof": 287
+      },
+      "instagram": {
+        "comments_analyzed": 2934,
+        "comments_demanding_proof": 104
+      },
+      "linkedin": {
+        "comments_analyzed": "~260 on the sampled post",
+        "comments_demanding_proof": "present",
+        "example": "Show me the accuracy data."
+      }
+    },
+    "representative_quotes": {
+      "x": [
+        {
+          "handle": "AaryanPrateekX",
+          "verified": true,
+          "engagement": 1454,
+          "text": "@deepigoyal “We didn’t make any medical claim.” Science doesn’t care what you intended to claim. The moment you sell a healthcare product and make claims about its benefits, those claims must stand up to scientific scrutiny."
+        },
+        {
+          "handle": "antrix1984",
+          "verified": true,
+          "engagement": 1370,
+          "text": "@deepigoyal Still waiting for you to give a scientific paper... Ab rone se kaam nahi chalegaa"
+        },
+        {
+          "handle": "UrantiaBookGems",
+          "verified": true,
+          "engagement": 611,
+          "text": "Post 98 – The Existence of God Can’t Be Proven, Only Experienced The existence of God can never be proved by scientific experiment; it can only be realized in human experience.. God is spirit, and the soul is your spiritual seed. It lives i"
+        },
+        {
+          "handle": "SharathKumarGG7",
+          "verified": true,
+          "engagement": 403,
+          "text": "@deepigoyal I think he also doesn't know what this device is meant for except for word salad on alternate days! atleast you are safe in India &amp; no one will penalise here for such unscientific claims! Publish the white paper in peer revi"
+        }
+      ],
+      "instagram": [
+        {
+          "handle": "doclogues",
+          "verified": true,
+          "engagement": 428,
+          "text": "Can you give me the reference for this particular study? Is it Temple sponsored study or journal published study or as you say ‘pre-print’ which means company conducted study?"
+        },
+        {
+          "handle": "preet.kotak",
+          "verified": false,
+          "engagement": 224,
+          "text": "As a radiologist, I find this overhyped. The superficial temporal artery is simply a peripheral artery carrying the same cardiac pulse already measured by wrist-based wearables. Detecting its pulsations isn’t some revolutionary discovery.\n\n"
+        },
+        {
+          "handle": "draniketh",
+          "verified": false,
+          "engagement": 94,
+          "text": "A Rs 85000 health product with no reviewed evidence is......?"
+        },
+        {
+          "handle": "zaidmohammed92",
+          "verified": false,
+          "engagement": 54,
+          "text": "Based on \"internal studies\". Not peer reviewed"
+        }
+      ]
+    }
+  },
+  "second_example": {
+    "subject": "Kunal Shah's post about WhatsApp (X)",
+    "replies_analyzed": 360,
+    "promo_spam_removed": 54,
+    "genuine_sentiment": {
+      "positive": 181,
+      "neutral": 49,
+      "negative": 76
+    },
+    "dominant_theme": "WhatsApp has become a spam and ads machine",
+    "sub_asks": [
+      "separate business inbox",
+      "make AI features opt-in",
+      "fix fraud and impersonation"
+    ]
+  }
+}

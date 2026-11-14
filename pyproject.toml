@@ -1,0 +1,19 @@
+[project]
+name = "maxsentiment"
+version = "0.1.0"
+description = "Scrape your own logged-in social sessions, then extract real intelligence — effort-weighted sentiment and a recursive theme tree."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["curl_cffi>=0.7", "mcp>=1.2"]
+
+[project.scripts]
+maxsentiment = "server:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["maxsentiment", "maxsentiment.platforms", "maxsentiment.intel"]
+py-modules = ["server"]
