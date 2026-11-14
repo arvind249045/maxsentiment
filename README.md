@@ -4,7 +4,7 @@
 
 ### An MCP server that tells you what people actually think about any social post.
 
-**Paste a link. It reads every comment, finds the themes, and shows you which themes got the most engagement. Works on LinkedIn, Instagram, X, YouTube and Reddit.**
+**Give the post link. It reads every comment, finds the themes, and shows you which themes got the most engagement. Works on LinkedIn, Instagram, X, YouTube and Reddit.**
 
 ![Python](https://img.shields.io/badge/python-3.10+-3776ab?style=flat-square&logo=python&logoColor=white)
 ![MCP](https://img.shields.io/badge/MCP-server-5c4ee5?style=flat-square)
@@ -14,26 +14,17 @@
 [What it does](#what-it-does) · [Examples](#examples) · [Platforms](#platforms) · [Quick start](#quick-start) · [FAQ](#faq)
 
 </div>
-
-> [!IMPORTANT]
-> maxsentiment reads **public posts** using **your own logged-in session**. It never logs
-> in for you, posts, or makes accounts. It just reads the comments your browser can already
-> see. YouTube needs no login at all.
-
 ---
 
 ## What it does
 
-Reading a post's comments by hand is impossible once there are more than a few dozen. This
-does it for you. Two things:
+Two things:
 
 **1. It reads the engagement on a post.** Every comment and every reply. On any platform you
 support: LinkedIn, Instagram, X, YouTube, Reddit. You paste a link, it pulls the lot.
 
 **2. It makes sense of it.** It uses the OpenAI Decisions API to classify every comment, and
-GPT-5 to work out the themes. Then it buckets the result by engagement:
-
-> this theme got this much engagement. that theme got that much. ranked, top to bottom.
+GPT-5 to work out the themes. Then it buckets the themes with engagement and ranks top to bottom.:
 
 So instead of "412 comments," you get the real breakdown:
 
@@ -57,15 +48,26 @@ Point it at a post and you get four things:
 
 ### One theme, every channel
 
-Deepinder Goyal (Zomato founder) kept posting about Temple, his health wearable. Run his
-posts through maxsentiment on three platforms and the same theme rises to the top on all of
-them: **people want the validated science, and doctors are the ones demanding it.**
+Deepinder Goyal (Zomato founder) pots about Temple, his health wearable. Here is what maxsentiment found across his Temple posts on X: **2,404 comments, 30,274 engagement units** (a like counts 1, a reply or repost 2, a quote 3).
 
-| platform | the shared demand | a real comment |
-|---|---|---|
-| **X** | 283 of 5,241 replies ask for proof or peer review | *@antrix1984:* "Still waiting for you to give a scientific paper." |
-| **Instagram** | 106 of 2,934 comments, led by doctors | *@doclogues (verified):* "Can you give me the reference for this particular study?" · *@preet.kotak:* "As a radiologist, I find this overhyped." |
-| **LinkedIn** | same demand on the professional feed | "Show me the accuracy data." |
+| sentiment | comments | % of comments | engagement | % of engagement |
+|---|---|---|---|---|
+| Negative | 1,217 | 51% | 23,242 | **77%** |
+| Positive | 639 | 27% | 5,162 | 17% |
+| Neutral | 548 | 23% | 1,870 | 6% |
+
+| theme | comments | engagement | % of engagement |
+|---|---|---|---|
+| Political / social critique ("not for India") | 138 | 9,204 | **30%** |
+| Science & claims skepticism ("show the proof") | 277 | 7,882 | **26%** |
+| Fraud / unethical-conduct allegations | 128 | 2,842 | 9% |
+| Product design, price, privacy | 276 | 2,523 | 8% |
+| Product enthusiasm | 119 | 2,132 | 7% |
+| Supportive advice / questions | 144 | 1,286 | 4% |
+| Cheerleading / support | 236 | 1,150 | 4% |
+| "How does it work" (neutral) | 349 | 1,016 | 3% |
+
+The top two themes are 415 comments, 17% of the thread, but they drove 56% of all the engagement. That is the whole point of weighting by effort: the loud minority is not loud by headcount, it is loud by reach.
 
 One tool, one question ("where's the proof?"), and you can see it's not a few loud trolls, it's
 a consistent, credentialed objection across every place the product is being talked about. That
